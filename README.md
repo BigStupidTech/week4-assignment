@@ -1,20 +1,20 @@
 # Music Utility Assistant
 
-A **chatbot** for the practical side of music — a controlled, text-based assistant
-that explains audio/lyric concepts and performs real text utilities in chat.
+A **chatbot** that answers questions about music in plain language — a friendly,
+honest **music knowledge assistant**.
 
 ## What it does
-- **Explains** audio, lyric, and subtitle concepts in plain language (formats,
-  bitrate/sample rate, LRC vs. SRT vs. VTT, word-level timestamps, BPM/key, etc.).
-- **Converts & reformats** text you paste — SRT ⇄ VTT ⇄ LRC ⇄ plain text, builds LRC
-  from lyrics + times, shifts/scales timestamps, cleans up lyric files.
-- **Generates commands & workflows** — ready-to-run `ffmpeg`/Audacity recipes for
-  converting, trimming, extracting, or normalizing audio, with each step explained.
-- **Helps create content** — drafting/editing lyrics, song structure, metadata.
+- **Explains audio & file formats** — MP3/WAV/FLAC, lossy vs. lossless, bitrate and
+  sample rate, and what lyric/subtitle formats like LRC, SRT, and VTT are.
+- **Teaches music-theory basics** — notes, chords, keys, BPM/tempo, time signatures,
+  song structure.
+- **Covers making music** — recording, mixing vs. mastering, stems, loudness.
+- **Gives practical guidance & songwriting help** — which format/tool fits a goal,
+  the general steps for a task, and help brainstorming lyrics.
 
-It's **honest about its limits**: it can't listen to audio, process real files, or
-access the internet — it works with text and know-how, and hands you the commands to
-run yourself. It also won't help with piracy or copyright circumvention.
+It's **honest about its limits**: it shares knowledge and guidance, but it can't
+listen to audio, open or convert files (VTT/SRT/LRC/audio), or access the internet.
+It won't help with piracy or copyright circumvention.
 
 ## Files
 | File | Purpose |

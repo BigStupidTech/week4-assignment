@@ -17,10 +17,10 @@ have to re-explain how I like to work.
 - Treat my follow-up questions as part of the work — I'm here to learn.
 
 ## What's in this folder
-A **chatbot** called the **Music Utility Assistant** — a controlled,
-text-based helper for music utilities (explaining audio/lyric formats, converting
-captions/lyrics, generating ffmpeg/Audacity recipes, and helping write lyrics). Its
-instructions live in `chatbot-instructions.md`.
+A **chatbot** called the **Music Utility Assistant** — a friendly music knowledge
+assistant that explains music in plain language (audio/lyric formats, music theory,
+recording/mixing/mastering) and gives guidance. It shares information, not file
+processing. Its instructions live in `chatbot-instructions.md`.
 
 ## Housekeeping
 - Keep working files on the **`week4-assignment`** branch, not `main`.
