@@ -1,7 +1,7 @@
 # Example Prompts — Music Utility Assistant
 
-Paste the instructions from `chatbot-instructions.md` into BoodleBox, then try
-these prompts to see the bot's range and confirm it behaves well.
+Paste the instructions from `chatbot-instructions.md` into your chatbot builder,
+then try these prompts to see the bot's range and confirm it behaves well.
 
 ## Knowledge / explaining
 | Prompt | Good behavior |

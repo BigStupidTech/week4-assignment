@@ -1,8 +1,7 @@
 # Music Utility Assistant
 
-A **BoodleBox chatbot** that helps with the practical side of music — a controlled,
-text-based assistant that explains audio/lyric concepts and performs real
-text utilities in chat.
+A **chatbot** for the practical side of music — a controlled, text-based assistant
+that explains audio/lyric concepts and performs real text utilities in chat.
 
 ## What it does
 - **Explains** audio, lyric, and subtitle concepts in plain language (formats,
@@ -20,13 +19,6 @@ run yourself. It also won't help with piracy or copyright circumvention.
 ## Files
 | File | Purpose |
 |------|---------|
-| [`chatbot-instructions.md`](chatbot-instructions.md) | The chatbot's instructions. Copy the **INSTRUCTIONS** section into the BoodleBox builder. |
+| [`chatbot-instructions.md`](chatbot-instructions.md) | The chatbot's instructions — paste the **INSTRUCTIONS** section into your chatbot builder's instructions field. |
 | [`TESTING.md`](TESTING.md) | Example prompts for exercising the bot. |
 | [`CLAUDE.md`](CLAUDE.md) | Working preferences Claude Code reads in this folder. |
-
-## Use it in BoodleBox
-1. Open `chatbot-instructions.md` and copy the **INSTRUCTIONS (paste this into
-   BoodleBox)** section.
-2. Create a new chatbot in BoodleBox and paste it into the instructions field.
-3. Name it **Music Utility Assistant** and start chatting (see `TESTING.md` for
-   prompts to try).

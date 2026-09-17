@@ -17,7 +17,7 @@ have to re-explain how I like to work.
 - Treat my follow-up questions as part of the work — I'm here to learn.
 
 ## What's in this folder
-A **BoodleBox chatbot** called the **Music Utility Assistant** — a controlled,
+A **chatbot** called the **Music Utility Assistant** — a controlled,
 text-based helper for music utilities (explaining audio/lyric formats, converting
 captions/lyrics, generating ffmpeg/Audacity recipes, and helping write lyrics). Its
 instructions live in `chatbot-instructions.md`.
