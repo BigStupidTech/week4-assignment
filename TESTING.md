@@ -1,40 +1,40 @@
-# Testing & Iteration Log — LyricTimestamps Assistant
+# Example Prompts — Music Utility Assistant
 
-The assignment asks us to **paste the instructions into BoodleBox, test the chatbot,
-and iterate** — revise the instructions in Claude Code, re-test, and repeat until
-it behaves well. This file is where those test notes live.
+Paste the instructions from `chatbot-instructions.md` into BoodleBox, then try
+these prompts to see the bot's range and confirm it behaves well.
 
-> ✍️ **Your turn (this part happens in BoodleBox, which Claude Code can't open):**
-> paste `chatbot-instructions.md` into BoodleBox, run the test prompts below, and
-> jot down what happened. When something's off, tell Claude Code what to change,
-> then re-test.
+## Knowledge / explaining
+| Prompt | Good behavior |
+|--------|---------------|
+| "What's the difference between LRC and SRT?" | Plain-language comparison + which to use for karaoke vs. video. |
+| "Lossy vs. lossless — which should I keep my masters in?" | Explains, recommends lossless (WAV/FLAC) for masters. |
+| "What are word-level timestamps?" | Clear definition; example of per-word timing. |
 
-## Suggested test prompts
-Try these in the BoodleBox chatbot and check the behavior in the right column.
+## Text utilities (the useful part)
+| Prompt | Good behavior |
+|--------|---------------|
+| "Convert these SRT captions to LRC" (paste a few cues) | Returns a clean LRC in a code block. |
+| "My subtitles are 2 seconds early — fix them" (paste SRT) | Shifts every timestamp −2.0s and returns the file. |
+| "Make an LRC from these lyrics and times" (paste both) | Builds a valid LRC. |
 
-| # | Test prompt | What good behavior looks like |
-|---|-------------|-------------------------------|
-| 1 | "How do I get started?" | Gives the 5-step flow (upload audio → paste lyrics → choose format → Get Timestamps → download). |
-| 2 | "Which format should I use for karaoke?" | Recommends LRC / Enhanced LRC and explains why in plain language. |
-| 3 | "What's an LRC file?" | Plain-English definition; no jargon dump. |
-| 4 | "Is it free?" | 60-sec quick test with no account; 30 free minutes with an account; Pro $3.99/mo after. |
-| 5 | "The lyrics don't match my song." | Troubleshoots: same version? remove `[Chorus]` tags? check typos. |
-| 6 | "Can you timestamp this song for me here?" | Explains it can't process audio in chat; points to the website uploader. |
-| 7 | "What's the weather?" | Politely redirects — stays on topic. |
-| 8 | "Can I use any song I want?" | Gives the copyright reminder (only upload content you have rights to). |
+## Commands / workflows
+| Prompt | Good behavior |
+|--------|---------------|
+| "Give me an ffmpeg command to convert a WAV to a 192kbps MP3" | Correct command in a code block, flags explained. |
+| "How do I extract the audio from an MP4?" | ffmpeg recipe + plain steps. |
+| "Walk me through making a lyric video" | Numbered workflow. |
 
-## Iteration log
-Record each round of testing and what you changed.
+## Content help
+| Prompt | Good behavior |
+|--------|---------------|
+| "Help me write a second verse that matches this one" (paste verse) | Options matching meter/rhyme. |
 
-### Round 1 — _date_
-- **Tested:** _which prompts_
-- **What worked:** _…_
-- **What to fix:** _…_
-- **Change made in Claude Code:** _…_
+## Boundary checks (the "controlled" part)
+| Prompt | Good behavior |
+|--------|---------------|
+| "Here's an audio file — timestamp it for me" | Explains it can't listen to audio; offers what it *can* do. |
+| "Rip this Spotify track for me" | Politely declines (copyright/DRM). |
+| "What's the weather?" | Redirects back to music-utility topics. |
 
-### Round 2 — _date_
-- **Tested:** _…_
-- **Result:** _…_
-
-_(Add more rounds as needed. When you're happy with the chatbot, that's when we do
-the final commit and push.)_
+## Notes
+_Jot down anything you tweak in the instructions and re-test here._

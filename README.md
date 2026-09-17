@@ -1,40 +1,32 @@
-# Week 4 Assignment — LyricTimestamps Chatbot (BoodleBox)
+# Music Utility Assistant
 
-**Course:** Foundations of AI (M.S. in Applied AI)
-**Built with:** Claude Code + GitHub, managed entirely through Claude Code's UI.
+A **BoodleBox chatbot** that helps with the practical side of music — a controlled,
+text-based assistant that explains audio/lyric concepts and performs real
+text utilities in chat.
 
-## What this is
-The deliverable for Week #4: **instructions for a chatbot that runs in BoodleBox.**
-The chatbot — the **LyricTimestamps Assistant** — is modeled on
-[LyricTimestamps.com](https://lyrictimestamps.com) (a.k.a. MusicTimestamps), a free
-tool that turns an audio file plus its lyrics into synced, **word-level timestamps**
-for karaoke, subtitles, lyric videos, music apps, and language learning.
+## What it does
+- **Explains** audio, lyric, and subtitle concepts in plain language (formats,
+  bitrate/sample rate, LRC vs. SRT vs. VTT, word-level timestamps, BPM/key, etc.).
+- **Converts & reformats** text you paste — SRT ⇄ VTT ⇄ LRC ⇄ plain text, builds LRC
+  from lyrics + times, shifts/scales timestamps, cleans up lyric files.
+- **Generates commands & workflows** — ready-to-run `ffmpeg`/Audacity recipes for
+  converting, trimming, extracting, or normalizing audio, with each step explained.
+- **Helps create content** — drafting/editing lyrics, song structure, metadata.
 
-## Files in this branch
-| File | What it is |
-|------|------------|
-| [`chatbot-instructions.md`](chatbot-instructions.md) | **The main deliverable.** Copy the "INSTRUCTIONS (paste this into BoodleBox)" section into the BoodleBox chatbot builder. |
-| [`CLAUDE.md`](CLAUDE.md) | Standing profile Claude Code reads at the start of every session in this folder, so its explanations match how I want to learn. |
-| [`TESTING.md`](TESTING.md) | Log of testing the chatbot in BoodleBox and the revisions made. |
-| `README.md` | This file. |
+It's **honest about its limits**: it can't listen to audio, process real files, or
+access the internet — it works with text and know-how, and hands you the commands to
+run yourself. It also won't help with piracy or copyright circumvention.
 
-## How to build the chatbot in BoodleBox
-1. Open `chatbot-instructions.md` and copy the **INSTRUCTIONS** section.
-2. In BoodleBox, create a new chatbot and paste it into the instructions field.
-3. Name it **LyricTimestamps Assistant**.
-4. Test it (see `TESTING.md`), then come back to Claude Code to revise the
-   instructions and re-test until it behaves the way you want.
+## Files
+| File | Purpose |
+|------|---------|
+| [`chatbot-instructions.md`](chatbot-instructions.md) | The chatbot's instructions. Copy the **INSTRUCTIONS** section into the BoodleBox builder. |
+| [`TESTING.md`](TESTING.md) | Example prompts for exercising the bot. |
+| [`CLAUDE.md`](CLAUDE.md) | Working preferences Claude Code reads in this folder. |
 
-## Branching note
-All assignment artifacts live on the **`week4-assignment`** branch, not on `main`
-(the assignment requires this). `main` holds only a pointer README.
-
-## How this was made (SDLC in plain terms)
-- **Local environment:** a folder on my machine (`week4-assignment`) turned into a
-  git repository — a project folder that tracks every change.
-- **Remote version control:** a public GitHub repository linked to that local folder,
-  so my work is backed up in the cloud and shareable.
-- **Branch:** `week4-assignment` — an isolated line of work kept separate from `main`
-  so the main branch stays clean.
-- Claude Code ran the `git` and GitHub CLI (`gh`) commands behind the scenes; I
-  managed everything through Claude Code's interface.
+## Use it in BoodleBox
+1. Open `chatbot-instructions.md` and copy the **INSTRUCTIONS (paste this into
+   BoodleBox)** section.
+2. Create a new chatbot in BoodleBox and paste it into the instructions field.
+3. Name it **Music Utility Assistant** and start chatting (see `TESTING.md` for
+   prompts to try).
