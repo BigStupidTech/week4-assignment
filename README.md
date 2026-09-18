@@ -1,5 +1,7 @@
 # Music Utility Assistant
 
+**▶️ Try the live chatbot: [box.boodle.ai/a/@MusicUtilityAssistant](https://box.boodle.ai/a/@MusicUtilityAssistant)**
+
 A **chatbot** that answers questions about music in plain language — a friendly,
 honest **music knowledge assistant**.
 
